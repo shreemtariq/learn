@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,200;1,600&display=swap');
+
+/*  ############ public style  ############ */
+
+*,::before,::after{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:#f1f1f1;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    margin:auto;
+    width:85%;
+}
+/*  ############ navbar style  ############ */
+
+nav {
+    background-color:#fff;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+nav .logo{
+    width:20%;
+}
+nav .nav-list{
+    width:60%;
+}
+nav .nav-list .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-list .list .list-item{
+    margin-right:32px;
+    position: relative;
+}
+
+nav .nav-list .list .list-item .nav-link{
+    text-transform:capitalize;
+    font-size:16px;
+    font-weight: 600;
+    color:#141517;
+    transition:all 1s;
+}
+
+nav .nav-list .list .list-item:nth-child(4):after{
+
+    content: 'HOT';
+    position: absolute;
+    top: -24px;
+    background-color: #ff003c;
+    color: #Fff;
+    font-size: 12px;
+    padding: 5px 4px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px #ccc);
+}
+
+nav .nav-list .list .list-item:hover .nav-link{
+    color:#ff003c;
+}
+
+nav .nav-icon{
+    width:20%;
+    text-align: right;
+}
